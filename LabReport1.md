@@ -56,10 +56,12 @@ Now that we have successfully connected to the server lets try out some new comm
 - cd
 - ls -lat
 - ls -a
-- ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
 - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
 - cat /home/linux/ieng6/cs15lsp23/public/hello.txt
   
 Here is example of what we can see after running the command **ls -lat**:
   
 ![Image](ls-lat.png)
+
+Congratulations you have now successfully connected to a server remotely and tried out some commands in the terminal! Thanks to this ability you are able to work 
+on different servers from all over the world as long as you have a good connection and access to the server. This is a skill that can be very useful in the future as in the prgramming world you won't be able to travel all over the place instantly to fix servers so being able to connect remotely can be very useful in being able to fix servers from different places at anytime. 

@@ -24,3 +24,6 @@ On this page it will prompt you to put in your username which will be your Trito
 
 ![Image](id1.png)
 
+Once you see this screen write down your username as this is the username you will be using to connect to the server and to reset your password. Now click the Global link and select the following link:
+
+![Image](password.png)

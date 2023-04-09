@@ -18,4 +18,8 @@ wizard. Once installed, open VS Code and you should see a screen similar to this
 Now that you have VS Code the next step is to get access your ieng6 account as this will allow you to conect to the sever we are trying to reach. IN order to do this
 you need to head to this [link](https://sdacs.ucsd.edu/~icc/index.php) in which you will look up your CSE 15L account. Once you reach this link you should see the following:
 
-![Image](
+![Image](Account.png) 
+
+On this page it will prompt you to put in your username which will be you UCSD email(without the @ucsd.edu) and your PID number. Afterwards you should reach a screen that look like this:
+
+![Image](id.png)

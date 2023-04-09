@@ -10,3 +10,9 @@ to install VS Code as I had already installed since it was required for CSE 11 l
 find it by going to this [Link](https://code.visualstudio.com/). Click on the download which corresponds to your system (Windows/Mac) and follow the setps on the setup \
 wizard. Once installed, open VS Code and you should see a screen similar to this:
 
+![Image](VSCode_Screenshot.png)
+
+*if you can see this screen then you have installed VS Code correctly*
+
+# Getting acces to your ieng6 account
+Now that you have VS Code the next step is to get access your ieng6 account as this will allow you to conect to the sever we are trying to reach.

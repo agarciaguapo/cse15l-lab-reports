@@ -36,14 +36,30 @@ Once all the perivous steops are completed we are finally ready to connect to th
 **ssh cs15lsp23zz@ieng6.ucsd.edu**\
 *The zz will be differnt for everyone make sure to use your username from earlier*
 
-If this is your first time connecting you may see the following: \
+If this is your first time connecting you may see the following: 
 
-⤇ ssh cs15lsp23zz@ieng6.ucsd.edu
-The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
-RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+⤇ ssh cs15lsp23zz@ieng6.ucsd.edu \
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. \
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. \
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 
-In which you can type yes.It will then ask for a password which will be the new password you set up ealier. Once done you should see a screen like this:
+In which you can type yes. It will then ask for a password which will be the new password you set up ealier. Once done you should see a screen like this:
 
 ![Image](terminal.png)
 
+Once you reach this screen you can give yourself a pat on the back you have successfully connected to the server!
+
+# Having fun with commands
+Now that we have successfully connected to the server lets try out some new commands in the terminal to see what they do. A list of commands can be found here along:
+
+- cd ~
+- cd
+- ls -lat
+- ls -a
+- ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
+- cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
+- cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+  
+Here is example of what we can see after running the command **ls -lat**:
+  
+![Image](ls-lat.png)

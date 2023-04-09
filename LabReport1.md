@@ -12,7 +12,7 @@ wizard. Once installed, open VS Code and you should see a screen similar to this
 
 ![Image](VSCode_Screenshot.png)
 
-*if you can see this screen then you have installed VS Code correctly*
+*If you can see this screen then you have installed VS Code correctly*
 
 # Gaining access to your ieng6 account
 Now that you have VS Code the next step is to get access your ieng6 account as this will allow you to conect to the sever we are trying to reach. IN order to do this
@@ -34,10 +34,16 @@ In the username box enter the username you copied down from ealier and follow th
 Once all the perivous steops are completed we are finally ready to connect to the server. The first step is to go to VS Code and open the terminal by going to Terminal
 --> New Terminal (Ctrl or Command +) in which a new termial should appear. Once you have a termial open enter the following:\
 **ssh cs15lsp23zz@ieng6.ucsd.edu**\
-*the zz will be differnt for everyone make sure to use your username from earlier*
+*The zz will be differnt for everyone make sure to use your username from earlier*
 
-It will then ask for a password which will be the new password you set up ealier. Once done you should see a screen like this:
+If this is your first time connecting you may see the following: \
+
+⤇ ssh cs15lsp23zz@ieng6.ucsd.edu
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+
+In which you can type yes.It will then ask for a password which will be the new password you set up ealier. Once done you should see a screen like this:
 
 ![Image](terminal.png)
-
 

@@ -20,6 +20,7 @@ you need to head to this [link](https://sdacs.ucsd.edu/~icc/index.php) in which 
 
 ![Image](Account.png) 
 
-On this page it will prompt you to put in your username which will be you UCSD email(without the @ucsd.edu) and your PID number. Afterwards you should reach a screen that look like this:
+On this page it will prompt you to put in your username which will be your TritonLink username and your PID number. Afterwards you should reach a screen that look like this:
 
-![Image](id.png)
+![Image](id1.png)
+

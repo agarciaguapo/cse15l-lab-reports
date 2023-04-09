@@ -7,4 +7,6 @@ you should be able to remotley connect to a server using a ieng6 account thorugh
 # Installing VS Code
 Before we try to connecting to a server we need to install VS Code as this will be the code editor we will be using to access the server. In my case I didn't have \
 to install VS Code as I had already installed since it was required for CSE 11 last quarter at UCSD. However, if you don't have VS Code install yet yoy can easily \ 
-find it by going to this [Link](https://code.visualstudio.com/) 
+find it by going to this [Link](https://code.visualstudio.com/). Click on the download which corresponds to your system (Windows/Mac) and follow the setps on the setup \
+wizard. Once installed, open VS Code and you should see a screen similar to this:
+

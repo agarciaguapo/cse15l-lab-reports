@@ -27,3 +27,17 @@ On this page it will prompt you to put in your username which will be your Trito
 Once you see this screen write down your username as this is the username you will be using to connect to the server and to reset your password. Now click the Global link and select the following link:
 
 ![Image](password.png)
+
+In the username box enter the username you copied down from ealier and follow the instructions to reset your password.
+
+# Connecting to the server
+Once all the perivous steops are completed we are finally ready to connect to the server. The first step is to go to VS Code and open the terminal by going to Terminal
+--> New Terminal (Ctrl or Command +) in which a new termial should appear. Once you have a termial open enter the following:\
+**ssh cs15lsp23zz@ieng6.ucsd.edu**\
+*the zz will be differnt for everyone make sure to use your username from earlier*
+
+It will then ask for a password which will be the new password you set up ealier. Once done you should see a screen like this:
+
+![Image](terminal.png)
+
+

@@ -73,3 +73,100 @@ The way this is working is due to the fact that everytime the "/add" method is f
 When a request is made to /add-message?s=<string>, the handleRequest method is called with a URI object representing the requested URL. 
 The URI object has a path of "/add-message" and a query of "s=<string>". In the handleRequest method, the message field of the Handler class gets cahnged
 when a new message is added and since the message field is initially empty, it gets appended with the new message string.
+
+## Bugs and Testing
+        
+Another important skill to have as a programmer is being able to catch bugs and be able to fix them. Bugs are always bound to happen since 
+prorgammers will always make mistakes so one way to catch bugs is by making creating test which can help you see what bugs are happening and 
+how to fix them.
+        
+The code in which we will be looking at is the code found in ArrayExamples.java:
+
+        public class ArrayExamples {
+
+          // Changes the input array to be in reversed order
+         static void reverseInPlace(int[] arr) {
+           for(int i = 0; i < arr.length; i += 1) {
+             arr[i] = arr[arr.length - i - 1];
+           }
+         }
+  
+         // Returns a *new* array with all the elements of the input array in reversed
+         // order
+         static int[] reversed(int[] arr) {
+          int[] newArray = new int[arr.length];
+          for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = newArray[arr.length - i - 1];
+            }
+          return arr;
+          }
+        
+          // Averages the numbers in the array (takes the mean), but leaves out the
+          // lowest number when calculating. Returns 0 if there are no elements or just
+          // 1 element in the array
+          static double averageWithoutLowest(double[] arr) {
+          if(arr.length < 2) { return 0.0; }
+          double lowest = arr[0];
+          for(double num: arr) {
+            if(num < lowest) { lowest = num; }
+          }
+         double sum = 0;
+          for(double num: arr) {
+         if(num != lowest) { sum += num; }
+         }
+         return sum / (arr.length - 1);
+         }
+  
+  
+        }
+        
+Based on the code the bug seems to be found in the revered method as it creates a new array with the same length as the input array.
+        however, it copies the reversed elements into the input array which meams the original array gets modified instead of a new
+        array being created.
+Here are some Junit test that test the code.
+Failure Inducing:
+                           
+# Failure Inducing:                               
+        @Test
+        public void testReverse(){
+               int[] arr = {1,2,3,4,5,;
+               ArrayExamples.reverseInPlace(arr);
+               asserArrayEquals(new int[]{5,4,3,2,1), arr);
+                }
+        
+# Non-Failure Inducing:
+        @Test
+        public void testAverageWithoutLowest(){
+               double[] arr = {5.0,4.0,3.0};
+               double result = ArrayExamples.averageWithoutLowest(arr);
+               asserEquals(4.0, result, 0.0001);
+        }
+        
+# Bug Code Before:
+        static int[] reversed(int[] arr){
+                int[] newArray = new int[arr.length];
+                for( int i = 0; i < arr.length; i += 1){
+                       arr[i] = newArray[arr.length - i -1];
+                     }
+                 return arr;
+          }
+                                               
+ # Bug Code After:
+          static int[] reversed(int[] arr){
+                int[] newArray = new int[arr.length];
+                for( int i = 0; i < arr.length; i += 1){
+                       newArray[i] = arr[arr.length - i -1];
+                     }
+                 return newArray;
+          }
+           
+As mentioned before the bug was due to the fact that the reversedlist was being copied onto the original line which meant there wasn't a new 
+array being created to return. To fix this the reversed elemented needed to be copied onto a new array insetad of the original so we changed
+"arr[i] = newArray[arr.length - i -1]" to  "newArray[i] = arr[arr.length - i -1]" and made it return the newArray instead.
+        
+        
+## What I leanred
+        
+One of the coolest thing I leanred this week in my opinion was being able to start my own webserver. I didn't know that starting a web server was so simple
+and although it was very simple, it was still cool to see how to be able to start one and be able to make certain commands that can change the page. I also didint know that in order to start a server I needed a port id and the more I think about it, the more it makes sense because if servers have the same port then that would cause a mess since there will people different people trying to access the same port. So by hvaing a unique port this allows the server to run smoothly. 
+Finally it was cool to see how to update commands on a server which can change certain things on a page, I imagine that on an actaul website it is more complicated since there are so many other links to head towards but hopefully one day i'll be able to create an actual website myself.

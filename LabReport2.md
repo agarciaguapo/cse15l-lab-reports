@@ -165,7 +165,7 @@ array being created to return. To fix this the reversed elemented needed to be c
 "arr[i] = newArray[arr.length - i -1]" to  "newArray[i] = arr[arr.length - i -1]" and made it return the newArray instead.
         
         
-## What I learned
+## What I learned this week
         
 One of the coolest thing I leanred this week in my opinion was being able to start my own webserver. I didn't know that starting a web server was so simple
 and although it was very simple, it was still cool to see how to be able to start one and be able to make certain commands that can change the page. I also didint know that in order to start a server I needed a port id and the more I think about it, the more it makes sense because if servers have the same port then that would cause a mess since there will people different people trying to access the same port. So by hvaing a unique port this allows the server to run smoothly. 

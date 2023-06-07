@@ -1,4 +1,4 @@
-# Lab Report 4
+# Lab Report 4 (Vim)
 In this lab report we were given a a code which had an error in it and we were told to change and fix the code using script. Using script felt very nice 
 and efficient and I was suprised to see the diffrerent types of commands that you can use to edit the code. Many allowed to fix the code a lot faster which 
 can be very helpful in a professional setting. 

@@ -1,7 +1,10 @@
 # Lab Report 4
 In this lab report we were given a a code which had an error in it and we were told to change and fix the code using script. Using script felt very nice 
 and efficient and I was suprised to see the diffrerent types of commands that you can use to edit the code. Many allowed to fix the code a lot faster which 
-can be very helpful in a professional setting. The code given is porvided below:
+can be very helpful in a professional setting. 
+
+## Code to fix
+The code given is porvided below:
     
     class ListExamples {   
       // Returns a new list that has all the elements of the input list for which
@@ -51,19 +54,28 @@ Here is the message given if we try to run the code:
 
 ![Image](lab7-fail2.png)
 
-## What I did to fix the code
+## How to fix using vim
 
-In order to fix the code we need to change index1 to index2 in and in order to do that I did the following steps below:
-    
-    J (down) <43>
+In order to fix the code we need to change index1 to index2. In order to do that I did the following steps below:
+
+Fisrtly we have to access to file so we have to clone the directory into the server in order to acces the files needed to be fix, after which we have to access the correct directory by using the cd command.
+This allows us to acces the files needed correctly and without issue. Finally to access the file we use the vim command followed by the file in order to edit the code thorugh the terminal.
+
+    $ git clone https://github.com/ucsd-cse15l-s23/lab7
+    $ cd lab7
+    $ vim ListExamples.java
+
+The following steps will show you how to navigate and change the code using vim.
+  
+    J key (down) <pressed 43 times>
 
 When entering the script we started I started at the top so i had to press the j key 43 times to reach the appropriate line that needed to be changed.
 
-    L (right) <11>
+    L key (right) <pressed 11 times>
 
 Once at the line I had to move the cursor to the index that needed to be changed, which in this case was the 1 in “index1” which had to be changed to a 2.
 
-    R <2>
+    R key <pressed 1 time>
 
 To do the appropriate changes I took advantage of the replace command which replaces the element at the cursor with the new element that you choose. 
 The reason I did this was because it was a lot faster and since it was just 1 element that needed to be changed the replace command seemed to work the best in 
@@ -73,10 +85,17 @@ this situation.
 
 Finally to save these changes we used the save and exit command to save the file.
 
-After doing these changes, if we run the code again we get the following results:
+## Results
+After doing these changes, if we run the code again with the following code:
+
+        $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+        $ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar" org.junit.runner.JUnitCore ListExamplesTests
+
+We should get the following results:
 
 ![Image](lab7-pass.png)
 
+## Summary
 As you can see after making the changes we were able to fix the code and it was able to pass both the test. There most likkley other alternative commands that 
 could also fix the code however the way I did took around 10-13 seconds (not official). One of these altenative ways could be that instead of pressing the j key
 43 times I could've done ":43" which brings the cursor down to the 43rd line which saves a lot more time. Another go tip I found out on accident is that when 
